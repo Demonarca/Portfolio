@@ -1,0 +1,52 @@
+.wrapper{
+  /*background-image: url("./../images/background4.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  height: 100vh;
+  background-color: black;
+}
+#black{
+	background-color: black;
+}
+#navblack{
+	background-color: black;
+	border-bottom: 2px solid white;
+}
+.about{
+	border-bottom: 2px solid black;
+	margin: 2px;
+}
+.skills{
+	border-bottom: 2px solid black;
+	margin: 2px;
+}
+.logimg{
+	height: 80px;
+	width: 80px;
+}
+.logimg2{
+	margin-top: 10px;
+	height: 80px;
+	width: 80px;
+}
+.logimgs{
+	height: 110px;
+	width: 180px;
+}
+.logimg3{
+	height: 80px;
+	width: 160px;
+}
+
+#tet {
+	position: relative;
+}
+
+#test {
+	position: absolute;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -10;
+}
