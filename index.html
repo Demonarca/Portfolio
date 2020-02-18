@@ -11,6 +11,9 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
 
     <title></title>
@@ -18,51 +21,61 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark" id="navblack">
-      <a class="navbar-brand" href="#">JUSTIN</a>
+      <a class="navbar-brand" href="index.html">JUSTIN POGI</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link text-white" href="index.html#abouts">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link text-white" href="index.html#skill">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link text-white" href="index.html#works">My Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
+    
 
-    <div class="wrapper">
-    </div>
+      <div class="wrapper">
+        <div id="landings">
+          <h1 class="ml-2 landing-text">JUSTIN</h1>
+          <h1 class="ml-2 landing-text">DEMONARCA</h1>
+
+          <p class="ml-3 under-text">FULL STACK WEB DEVELOPER</p>
+
+          <a href="index.html#abouts"><img src="./images/arrow-circle-down-solid.svg" class="ml-2 land-img" alt=""></a>
+
+        </div>
+      </div>
+
     
     <!-- -----------------------------------about----------------------------------- -->
-    <div class="container">
+    <div class="container-fluid" id="abouts">
       <div class="row">
 
         <div class="col-12">
           <div class="col-12 col-md-3 mx-auto">
-            <h1 class="text-center mt-5 about">ABOUT ME</h1>     
+            <h1 class="text-center mt-5 about mb-4">ABOUT ME</h1>  
           </div>
         </div>
 
-        <div class="col-12 col-md-4 text-center">
-          ha
+        <div class="col-12 col-md-6 text-center p-5">
+          <img class="img-responsive" src="https://i.pinimg.com/originals/85/b4/06/85b4066060120a0ee602815af9da2d0d.jpg" alt="">
         </div>
-        <div class="col-12 col-md-4 text-center">
-          ha
+        <div class="col-12 col-md-6 text-center p-5">
+          Hi I am a fresh graduate of Bachelor of Science in Information Technology, I believe that knowledge is not only being acquired inside the four corners of the school but can be also gain in your eagerness to learn by yourself certain through searching, testing and applying your skills and capability of that things you want to excel at. Which what I have done in my past 4 years of being a student and a freelance Web Developer.
         </div>
-        <div class="col-12 col-md-4 text-center">
-          ha
-        </div>
-
 
       </div>
     </div>
@@ -70,12 +83,12 @@
     
 
     <!-- -----------------------------------skills----------------------------------- -->
-    <div class="container">
+    <div class="container" id="skill">
       <div class="row" >
 
         <div class="col-12">
           <div class="col-12 col-md-2 mx-auto">
-            <h1 class="text-center mt-5 skills">SKILLS</h1>     
+            <h1 class="text-center mt-5 mb-5 skills">SKILLS</h1>     
           </div>
         </div>
 
@@ -119,34 +132,69 @@
           <img src="./images/logo/node-brands.svg" class="logimg2" alt="">
         </div>
         <!-- end 2nd col -->
-        <div class="col-12 col-md-2 text-center">
+        <div class="col-12 col-md-6 mx-auto text-center">
           <img src="./images/logo/exps.png" class="logimgs" alt="">
-        </div>
-        <div class="col-12 col-md-2 text-center">
           <img src="./images/logo/mysql.svg" class="logimg3" alt="">
         </div>
-        
-        
-
-
-
 
       </div>
     </div>
     <!-- ---------------------------------end skills----------------------------------- -->
+    <!------------------------- start project ------------------------->
+
+    <div class="container-fluid" id="works">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="col-12 col-md-3 mx-auto">
+            <h1 class="text-center mt-5 about mb-4">MY WORKS</h1>  
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 p-5 mx-auto">
+          <img src="./images/cinemarollsss.png" class="my-work" alt="">
+        </div>
+        <div class="col-12 col-md-6 p-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eius repellendus delectus incidunt ad nostrum consectetur reiciendis. Dignissimos ab laudantium optio soluta, qui aliquid, nam reiciendis sint suscipit placeat voluptas!
+          <a class="btn btn-dark mt-2" href="https://demonarca.gitlab.io/capstone1/" target="_blank">Click To View Demo</a>
+        </div>
+
+        <div class="col-12 col-md-6 p-5 mx-auto">
+          <img src="./images/bookedup.png" class="my-work" alt="">
+        </div>
+        <div class="col-12 col-md-6 p-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eius repellendus delectus incidunt ad nostrum consectetur reiciendis. Dignissimos ab laudantium optio soluta, qui aliquid, nam reiciendis sint suscipit placeat voluptas!
+          <a class="btn btn-dark mt-2" href="https://book-renting.herokuapp.com/" target="_blank">Click To View Demo</a>
+        </div>
+
+        <div class="col-12 col-md-6 p-5 mx-auto">
+          <img src="./images/lensstudiosmob.png" class="my-work" alt="">
+        </div>
+        <div class="col-12 col-md-6 p-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eius repellendus delectus incidunt ad nostrum consectetur reiciendis. Dignissimos ab laudantium optio soluta, qui aliquid, nam reiciendis sint suscipit placeat voluptas!
+          <a class="btn btn-dark mt-2" href="https://bookingsystem-client.herokuapp.com/" target="_blank">Click To View Demo</a>
+        </div>
+        
+
+        
+
+      </div>
+    </div>
+
+    <!---------------------------- end project ------------------------->
 
     
 
     <footer>
-        <div class="container-fluid bg-primary">
+        <div class="container-fluid" id="black">
             <div class="row">
                 <div class="col-12">
                     <div class="contact text-center p-2">
-                        <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/fb.png" alt="social-facebook" class="social-links "></a>
-                        <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/ig.png" alt="social-instagram" class="social-links"></a>
-                        <a href="https://twitter.com/" target="_blank"><img src="assets/images/twitter.png" alt="social-twitter" class="social-links"></a>
-                        <p class="mb-0 text-center text-whte">
-                        All right reserved &copy; 2019
+                        <a href="https://www.facebook.com/" target="_blank"><img src="./images/fb.png" alt="social-facebook" class="social-links "></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./images/ig.png" alt="social-instagram" class="social-links"></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="./images/twitter.png" alt="social-twitter" class="social-links"></a>
+                        <p class="mb-0 text-center text-white">
+                        All right reserved &copy; 2020
                          </p>
                     </div>  
                 </div>
