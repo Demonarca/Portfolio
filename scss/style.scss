@@ -1,5 +1,12 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+$theme-colors: (
+	"primary" : #000,
+	"jumbobg": black
+	);
+
+
+
 .wrapper{
   background-image: url("./../images/justinbg.png");
   // background-size: cover;
@@ -12,9 +19,16 @@
 #black{
 	background-color: black;
 }
-#navblack{
-	background-color: black;
-	border-bottom: 5px solid #fff952;
+.navblack{
+	// background: none;
+	z-index: 20;
+  	transition: 0.35s all ease;
+}
+.navblack ul{
+  	padding: 1rem 2rem;
+}
+#text-black{
+	color: black;
 }
 .about{
 	border-bottom: 2px solid black;
@@ -76,12 +90,18 @@
 #landings{
 	text-align: center;
 	position: absolute;
-	top: 56%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: black;
 }
 .landing-text{
+	font-family: 'Playfair Display', serif;
+	font-weight: bolder;
+	margin-bottom: -15px;
+	font-size: 4.2rem;
+}
+.landing-textz{
 	font-family: 'Playfair Display', serif;
 	font-weight: bolder;
 	margin-bottom: -15px;
@@ -120,8 +140,21 @@ html{
 	width: 550px;
 }
 
-
-
+.scrolled {
+  background-color: black;
+  transition: 0.35s all ease;
+}
+.scrolled ul {
+  transition: 0.35s all ease;
+}
+.scrolled li a{
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
+.scrolled a{
+  color: white;
+  transition: 0.2s all ease-in-out;
+}
 
 
 
@@ -138,8 +171,15 @@ html{
 		margin-bottom: -15px;
 		font-size: 3rem;
 	}
+	.landing-textz{
+		font-family: 'Playfair Display', serif;
+		font-weight: bolder;
+		margin-bottom: -15px;
+		font-size: 3rem;
+		margin-top: 51px;
+	}
 	.my-work{
-		height: 150px;
+		height: 250px;
 		width: 100%;
 	}
 }
