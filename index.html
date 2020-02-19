@@ -19,32 +19,29 @@
     <title></title>
   </head>
   <body>
+      
+      <nav class="nav">
+           <div class="logo">
+               <a href="#">Justin Demonarca</a>
+           </div>
+       <div class="container ">  
+           <div id="mainListDiv" class="main_list">
+            <div class="ul-container mr-auto">
+               <ul class="navlinks text-center ml-auto">
+                   <li class="text-center mx-auto"><a href="#">About</a></li>
+                   <li class="text-center mx-auto"><a href="#">Portfolio</a></li>
+                   <li class="text-center mx-auto"><a href="#">Contact</a></li>
+               </ul>
+               </div>
+           </div>
+           <span class="navTrigger">
+               <i></i>
+               <i></i>
+               <i></i>
+           </span>
+       </div>
+   </nav>
     
-    <nav class="navbar navbar-expand-lg fixed-top navblack" id="navblack">
-      <a class="navbar-brand" href="index.html">JUSTIN POGI</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  href="index.html#abouts">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#skill">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#works">My Works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
     
 
       <div class="wrapper">
@@ -54,8 +51,15 @@
 
           <p class="ml-3 under-text">FULL STACK WEB DEVELOPER</p>
 
-          <a href="index.html#abouts"><img src="./images/arrow-circle-down-solid.svg" class="ml-2 land-img" alt=""></a>
+          <a href="index.html#just"><img src="./images/arrow-circle-down-solid.svg" class="ml-2 land-img" alt=""></a>
 
+        </div>
+      </div>
+
+      <div class="container" id="just">
+        <div class="row">
+          &nbsp;<Br>
+          &nbsp;
         </div>
       </div>
 
@@ -224,25 +228,26 @@
 
     <!-- my script -->
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
     <script>
-      $(function(){
-        $(window).scroll(function() {
-           if($(window).scrollTop() >= 100) {
-             $('#navblack').addClass('scrolled');
+       $(window).scroll(function() {
+           if ($(document).scrollTop() > 565) {
+               $('.nav').addClass('affix');
+               $('.nav').removeClass('invisible');
+           } else {
+               $('.nav').removeClass('affix');
+               $('.nav').addClass('invisible');
            }
-          else {
-            $('#navblack').removeClass('scrolled');
-          }
-        });
-      });
+       });
+       $('.navTrigger').click(function () {
+          $(this).toggleClass('active');
+          $("#mainListDiv").toggleClass("show_list");
+          $("#mainListDiv").fadeIn("main_list");
+
+       });
     </script>
 
   </body>
