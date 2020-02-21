@@ -13,6 +13,7 @@
 
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -24,22 +25,23 @@
            <div class="logo">
                <a href="#">Justin Demonarca</a>
            </div>
-       <div class="container ">  
-           <div id="mainListDiv" class="main_list">
-            <div class="ul-container mr-auto">
-               <ul class="navlinks text-center ml-auto">
-                   <li class="text-center mx-auto"><a href="#">About</a></li>
-                   <li class="text-center mx-auto"><a href="#">Portfolio</a></li>
-                   <li class="text-center mx-auto"><a href="#">Contact</a></li>
-               </ul>
-               </div>
-           </div>
-           <span class="navTrigger">
-               <i></i>
-               <i></i>
-               <i></i>
-           </span>
-       </div>
+         <div class="container ">  
+             <div id="mainListDiv" class="main_list">
+              <div class="ul-container">
+                 <ul class="navlinks text-center" id="gagana">
+                     <li class="" id="abs"><a href="#">About</a></li>
+                     <li class="" id="ski"><a href="#">My Skills</a></li>
+                     <li class="" id="port"><a href="#">Portfolio</a></li>
+                     <li class="" id="con"><a href="#">Contact</a></li>
+                 </ul>
+              </div>
+             </div>
+             <span class="navTrigger">
+                 <i></i>
+                 <i></i>
+                 <i></i>
+             </span>
+         </div>
    </nav>
     
     
@@ -241,6 +243,43 @@
                $('.nav').removeClass('affix');
                $('.nav').addClass('invisible');
            }
+           // about
+           if ($(document).scrollTop() > 650) {
+               $('#abs').addClass('line');
+           } else {
+               $('#abs').removeClass('line');
+           }
+           // end about
+           // skills
+           if ($(document).scrollTop() > 1700){
+               $('#ski').addClass('line');
+               $('#abs').removeClass('line');
+           }
+           else {
+               $('#ski').removeClass('line');
+           }
+           // end skills
+           // works
+           if ($(document).scrollTop() > 2200){
+               $('#port').addClass('line');
+               $('#abs').removeClass('line');
+               $('#ski').removeClass('line');
+           }
+           else {
+               $('#port').removeClass('line');
+           }
+           // end works
+           // contact
+           if ($(document).scrollTop() > 3300){
+               $('#con').addClass('line');
+               $('#abs').removeClass('line');
+               $('#ski').removeClass('line');
+               $('#port').removeClass('line');
+           }
+           else {
+               $('#con').removeClass('line');
+           }
+           // end contact
        });
        $('.navTrigger').click(function () {
           $(this).toggleClass('active');
